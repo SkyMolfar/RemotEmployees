@@ -32,26 +32,25 @@ p{
 
  .container:nth-child(1){
     padding-bottom: 32px;
- }
+}
+
 
 /* Header */
 .header{
     padding-top: 24px;
-    background-color: var(--white-color);
 }
+
 .header-container{
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 354px;
-
 }
 
 .header-nav{
     display: flex;
     justify-content: space-between;
     flex-grow: 1;
-
 }
 
 .header-logo{
@@ -59,7 +58,6 @@ p{
     display: flex;
     align-items: center;
     gap: 50px;
-
 }
 
 .header-list{
@@ -67,7 +65,6 @@ p{
     display: flex;
     align-items: center;
     gap: 40px;
-    
 }
 
 .logo{
@@ -78,8 +75,7 @@ p{
     line-height: 31px;
     color:#000000;
     text-decoration: none;
-    margin-right: 54px;
-    
+    margin-right: 54px;   
 }
 
 .accent{
@@ -89,7 +85,6 @@ p{
     font-size: 26px;
     line-height: 31px;
     color: var(--blu-color);
-    
 }
 
 .studio{
@@ -99,8 +94,7 @@ p{
     font-weight: 500;
     font-size: 14px;
     line-height: 16px;
-    text-decoration: none;
-    
+    text-decoration: none;   
 }
 
 .nav{
@@ -148,14 +142,19 @@ p{
 /*Main
  Hero*/
 
+.section{
+    padding: 94px 0;
+}
 
+.section:nth-child(2){
+    padding: 0;
+}
 
 .hero-background{
     display: flex;
     padding: 200px 0px;
     width: 100%;
     background: #2F303A;
-    
 }
 
 .hero-title{
@@ -189,7 +188,6 @@ p{
     background-color: var(--blu-color);
     margin: 0 auto;
     border: var(--blu-color);
-    
 }
 
 .button-link:hover,
@@ -199,14 +197,9 @@ p{
    border: #188CE8;
 }
 
+
 /*section 1*/
 
-.image-background{
-    width: 100%;
-    background: #F5F5F5;
-    
-
-}
 
 .visually-hidden {
     position: absolute;
@@ -226,7 +219,6 @@ p{
     padding-bottom: 94px;
     display: flex;
     gap: 30px;
-
 }
 
 .section-list{
@@ -246,8 +238,8 @@ p{
     font-size: 14px;
     line-height: 24px;
     color: var(--gray-color);
-    
 }
+
 
 /* section 2 */
 
@@ -260,9 +252,9 @@ img {
 .section-image{
     padding-bottom: 94px;
     display: flex;
-    gap: 30px;
-       
+    gap: 30px; 
 }
+
 
 /* section 3*/
 
@@ -315,8 +307,8 @@ img {
     color: var(--gray-color);
 }
 
-/*Footer*/
 
+/*Footer*/
 
 .background{
     background-color: #2F303A;
@@ -345,8 +337,7 @@ img {
     letter-spacing: 0.03em;
     margin-bottom: 28p;
     display: block;
-    margin-bottom: 28px;
-    
+    margin-bottom: 28px; 
 }
 
 .address{
@@ -364,6 +355,8 @@ img {
 .address:focus{
     color: var(--blu-color);
 }
+
+
  /*portfolio
  section 1*/
 
@@ -401,6 +394,7 @@ img {
     cursor: pointer;
     background-color: #2196F3;
 }
+
 .project-list{
     flex-wrap: wrap;
     display: flex;
