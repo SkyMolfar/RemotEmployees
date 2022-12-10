@@ -44,6 +44,7 @@ p{
 
 .header{
     padding-top: 24px;
+    padding-bottom: 25px;
 }
 
 
@@ -379,6 +380,7 @@ img {
 
 .header-portfolio{
     padding-top: 24px;
+    padding-bottom: 25px;
     border: 1px solid #ECECEC;
 }
 
