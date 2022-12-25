@@ -26,9 +26,19 @@
                     </ul>
                 </nav>
                 <ul class="header-list">
-                    <li><a href="mailto:info@devstudio.com" class="link-mail">info@devstudio.com</a></li>
-                    <li><a href="tel:+380961111111" class="link-number">+38 096 111 11 11</a></li>
-                </ul>
+                    <li class="list-contact">
+                        <a href="mailto:info@devstudio.com" class="link-mail">
+                            <svg class="header-contact" height="16" width="12">
+                                <use href="./image/icons.svg#icon-envelope"></use>
+                            </svg>info@devstudio.com
+                        </a>
+                    </li>
+                    <li><a href="tel:+380961111111" class="link-number">
+                        <svg class="header-contact" height="16" width="12">
+                            <use href="./image/icons.svg#icon-smartphone"></use>
+                        </svg>+38 096 111 11 11</a>
+                    </li>
+                </ul> 
             </div>
         </div>
     </header>
@@ -46,14 +56,42 @@
                 <div class="container">
                     <h2 class="visually-hidden">Наші переваги</h2>
                     <ul class="first-section">
-                        <li><h3 class="section-list">УВАГА ДО ДЕТАЛЕЙ</h3>
-                        <p class="section-text">Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.</p></li>
-                        <li><h3 class="section-list">ПУНКТУАЛЬНІСТЬ</h3>
-                        <p class="section-text">Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.</p></li>
-                        <li><h3 class="section-list">ПЛАНУВАННЯ</h3>
-                        <p class="section-text">Так само консультація з широким активом значною мірою зумовлює.</p></li>
-                        <li><h3 class="section-list">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
-                        <p class="section-text">Значимість цих проблем настільки очевидна, що реалізація планових завдань.</p></li>
+                        <li>
+                            <div class="section-icon">
+                                <svg class="list-icon" height="65.32" width="70">
+                                    <use href="./image/icons.svg#icon-antenna"></use>
+                                </svg>
+                            </div>
+                            <h3 class="section-list">УВАГА ДО ДЕТАЛЕЙ</h3>
+                            <p class="section-text">Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.</p>
+                        </li>
+                        <li>
+                            <div class="section-icon">
+                                <svg class="list-icon" height="66.96" width="70">
+                                    <use href="./image/icons.svg#icon-clock"></use>
+                                </svg>
+                            </div>
+                            <h3 class="section-list">ПУНКТУАЛЬНІСТЬ</h3>
+                            <p class="section-text">Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.</p>
+                        </li>
+                        <li>
+                            <div class="section-icon">
+                                <svg class="list-icon" height="70" width="53.69">
+                                    <use href="./image/icons.svg#icon-diagram"></use>
+                                </svg>
+                            </div>
+                            <h3 class="section-list">ПЛАНУВАННЯ</h3>
+                            <p class="section-text">Так само консультація з широким активом значною мірою зумовлює.</p>
+                        </li>
+                        <li>
+                            <div class="section-icon">
+                                <svg class="list-icon" height="70" width="70">
+                                    <use href="./image/icons.svg#icon-astronaut"></use>
+                                </svg>
+                            </div>
+                            <h3 class="section-list">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
+                            <p class="section-text">Значимість цих проблем настільки очевидна, що реалізація планових завдань.</p>
+                        </li>
                     </ul>
                 </div>
             </section>
@@ -75,28 +113,229 @@
                     <h2 class="section-title">Наша команда</h2>
                     <ul class="section-foto">
                         <li class="border-foto"><img src="./image/img-3.jpg" alt="Чоловік в окулярах і з бородою посміхається" width="270">
-                            <h3 class="title-foto">Ігор Дем'яненко</h3><p class="paragraf-foto">Product Designer</p></li>
+                            <h3 class="title-foto">Ігор Дем'яненко</h3><p class="paragraf-foto">Product Designer</p>
+                            <ul class="social-icon">
+                                 <li class="social-item">
+                                    <a class="social-link" href="#">
+                                        <svg class="instagram-icon" wigth="20" height="20">
+                                            <use href="./image/icons.svg#icon-instagram"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="social-item">
+                                    <a class="social-link" href="#">
+                                        <svg class="twiter-icon" wigth="20" height="16.25">
+                                            <use href="./image/icons.svg#icon-twiter"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="social-item">
+                                    <a class="social-link" href="#">
+                                        <svg class="facebook-icon" wigth="10" height="20">
+                                            <use href="./image/icons.svg#icon-facebook"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="social-item">
+                                    <a class="social-link" href="#">
+                                        <svg class="linkedin-icon" wigth="20" height="20">
+                                            <use href="./image/icons.svg#icon-linkedin"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
                         <li class="border-foto"><img src="./image/img-4.jpg" alt="Симпатична пані в окулярах посміхається" width="270">
-                            <h3 class="title-foto">Ольга Рєпіна</h3><p class="paragraf-foto">Frontend Developer</p></li>
+                            <h3 class="title-foto">Ольга Рєпіна</h3><p class="paragraf-foto">Frontend Developer</p>
+                            <ul class="social-icon">
+                                <li class="social-item">
+                                   <a class="social-link" href="#">
+                                       <svg class="instagram-icon" wigth="20" height="20">
+                                           <use href="./image/icons.svg#icon-instagram"></use>
+                                       </svg>
+                                   </a>
+                               </li>
+                               <li class="social-item">
+                                   <a class="social-link" href="#">
+                                       <svg class="twiter-icon" wigth="20" height="16.25">
+                                           <use href="./image/icons.svg#icon-twiter"></use>
+                                       </svg>
+                                   </a>
+                               </li>
+                               <li class="social-item">
+                                   <a class="social-link" href="#">
+                                       <svg class="facebook-icon" wigth="10" height="20">
+                                           <use href="./image/icons.svg#icon-facebook"></use>
+                                       </svg>
+                                   </a>
+                               </li>
+                               <li class="social-item">
+                                   <a class="social-link" href="#">
+                                       <svg class="linkedin-icon" wigth="20" height="20">
+                                           <use href="./image/icons.svg#icon-linkedin"></use>
+                                       </svg>
+                                   </a>
+                               </li>
+                           </ul>
+                        </li>
                         <li class="border-foto"><img src="./image/img-5.jpg" alt="Молодий, не голиний, чоловік посміхається" width="270">
-                            <h3 class="title-foto">Микола Тарасов</h3><p class="paragraf-foto">Marketing</p></li>
+                            <h3 class="title-foto">Микола Тарасов</h3><p class="paragraf-foto">Marketing</p>
+                            <ul class="social-icon">
+                                <li class="social-item">
+                                   <a class="social-link" href="#">
+                                       <svg class="instagram-icon" wigth="20" height="20">
+                                           <use href="./image/icons.svg#icon-instagram"></use>
+                                       </svg>
+                                   </a>
+                               </li>
+                               <li class="social-item">
+                                   <a class="social-link" href="#">
+                                       <svg class="twiter-icon" wigth="20" height="16.25">
+                                           <use href="./image/icons.svg#icon-twiter"></use>
+                                       </svg>
+                                   </a>
+                               </li>
+                               <li class="social-item">
+                                   <a class="social-link" href="#">
+                                       <svg class="facebook-icon" wigth="10" height="20">
+                                           <use href="./image/icons.svg#icon-facebook"></use>
+                                       </svg>
+                                   </a>
+                               </li>
+                               <li class="social-item">
+                                   <a class="social-link" href="#">
+                                       <svg class="linkedin-icon" wigth="20" height="20">
+                                           <use href="./image/icons.svg#icon-linkedin"></use>
+                                       </svg>
+                                   </a>
+                               </li>
+                           </ul>
+                        </li>
                         <li class="border-foto"><img src="./image/img-6.jpg" alt="Не голиний чоловік посміхається на камеру" width="270">
-                            <h3 class="title-foto">Михайло Єрмаков</h3><p class="paragraf-foto">UI Designer</p></li>
+                            <h3 class="title-foto">Михайло Єрмаков</h3><p class="paragraf-foto">UI Designer</p>
+                            <ul class="social-icon">
+                                <li class="social-item">
+                                   <a class="social-link" href="#">
+                                       <svg class="instagram-icon" wigth="20" height="20">
+                                           <use href="./image/icons.svg#icon-instagram"></use>
+                                       </svg>
+                                   </a>
+                               </li>
+                               <li class="social-item">
+                                   <a class="social-link" href="#">
+                                       <svg class="twiter-icon" wigth="20" height="16.25">
+                                           <use href="./image/icons.svg#icon-twiter"></use>
+                                       </svg>
+                                   </a>
+                               </li>
+                               <li class="social-item">
+                                   <a class="social-link" href="#">
+                                       <svg class="facebook-icon" wigth="10" height="20">
+                                           <use href="./image/icons.svg#icon-facebook"></use>
+                                       </svg>
+                                   </a>
+                               </li>
+                               <li class="social-item">
+                                   <a class="social-link" href="#">
+                                       <svg class="linkedin-icon" wigth="20" height="20">
+                                           <use href="./image/icons.svg#icon-linkedin"></use>
+                                       </svg>
+                                   </a>
+                               </li>
+                           </ul>
+                        </li>
                     </ul>
                 </div>
             </section>
-        
+        <section class="section">
+            <div class="container">
+                <h2 class="section-title">Постійні клієнти</h2>
+                <ul class="list-client">
+                    <li class="client-card">
+                        <a class="client-link" href="#"></a>
+                        <svg class="client-icon"  wigth="41" height="46">
+                            <use href="./image/icons.svg#icon-client-1"></use>
+                        </svg>
+                    </li>
+                    <li class="client-card">
+                        <a class="client-link" href="#"></a>
+                        <svg class="client-icon"  wigth="41" height="46">
+                            <use href="./image/icons.svg#icon-client-2"></use>
+                        </svg>
+                    </li>
+                    <li class="client-card">
+                        <a class="client-link" href="#"></a>
+                        <svg class="client-icon"  wigth="41" height="46">
+                            <use href="./image/icons.svg#icon-client-3"></use>
+                        </svg>
+                    </li>
+                    <li class="client-card">
+                        <a class="client-link" href="#"></a>
+                        <svg class="client-icon"  wigth="41" height="46">
+                            <use href="./image/icons.svg#icon-client-4"></use>
+                        </svg>
+                    </li>
+                    <li class="client-card">
+                        <a class="client-link" href="#"></a>
+                        <svg class="client-icon"  wigth="41" height="46">
+                            <use href="./image/icons.svg#icon-client-5"></use>
+                        </svg>
+                    </li>
+                    <li class="client-card">
+                        <a class="client-link" href="#"></a>
+                        <svg class="client-icon"  wigth="41" height="46">
+                            <use href="./image/icons.svg#icon-client-6"></use>
+                        </svg>
+                    </li>
+                </ul>
+
+
+            </div>
+        </section>
     </main>
     <footer>
         <address class="background">
-            <div class="container footer">
+            <div class="container-footer">
                 <ul>
-                     <li><a href="./index.html" lang="en" class="logo logo-footer">
+                    <li><a href="./index.html" lang="en" class="logo logo-footer">
                         <span class="accent">Web</span>Studio</a></li>
                     <li><a href="https://goo.gl/maps/HV8BAcvppS4aVWNn8" class="address">м. Київ, пр-т Лесі Українки, 26</a></li>
                     <li><a href="mailto:info@devstudio.com" class="mail-footer">info@devstudio.com</a></li>
                     <li><a href="tel:+380961111111" class="link-number">+38 096 111 11 11</a></li>
                 </ul>
+                <div class="social-footer">
+                    <h4 class="footer-title">приєднуйтесь</h4>
+                    <ul class="footer-icon">
+                        <li class="social-item">
+                           <a class="footer-link" href="#">
+                               <svg class="instagram-icon" wigth="20" height="20">
+                                   <use href="./image/icons.svg#icon-instagram"></use>
+                               </svg>
+                           </a>
+                       </li>
+                       <li class="social-item">
+                           <a class="footer-link" href="#">
+                               <svg class="twiter-icon" wigth="20" height="16.25">
+                                   <use href="./image/icons.svg#icon-twiter"></use>
+                               </svg>
+                           </a>
+                       </li>
+                       <li class="social-item">
+                           <a class="footer-link" href="#">
+                               <svg class="facebook-icon" wigth="10" height="20">
+                                   <use href="./image/icons.svg#icon-facebook"></use>
+                               </svg>
+                           </a>
+                       </li>
+                       <li class="social-item">
+                           <a class="footer-link" href="#">
+                               <svg class="linkedin-icon" wigth="20" height="20">
+                                   <use href="./image/icons.svg#icon-linkedin"></use>
+                               </svg>
+                           </a>
+                       </li>
+                   </ul>
+                </div>
             </div>
         </address>
     </footer>
