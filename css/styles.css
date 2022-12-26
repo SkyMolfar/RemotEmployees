@@ -405,18 +405,24 @@ img {
 }
 
 .client-card{
-    display: flex;
-    align-items: center;
+    
     border: 1px solid #AFB1B8;
     border-radius: 4px;
-    cursor: pointer;
+   
+   
+    
+}
+
+.client-link{
+    display: flex;
+    align-items: center;
     height: 92px;
     width: 170px;
     fill:  #AFB1B8;
 }
 
-.client-card:hover,
-.client-card:focus{
+.client-link:hover,
+.client-link:focus{
     fill:  #2196F3;
     border: 1px solid #2196F3;
 }
@@ -614,11 +620,18 @@ img {
     margin-bottom: 30px;
 }
 
+.border-shadow{
+    display: block;
+}
+
+
 .border-shadow:hover,
 .border-shadow:focus{
+    background: #FFFFFF;
     border: 1px solid #EEEEEE;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-}
+    }
+
 
 .border-project{
     background: #FFFFFF;
