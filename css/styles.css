@@ -620,6 +620,11 @@ img {
     margin-bottom: 30px;
 }
 
+.project-box{
+    flex-basis: calc((100% - 60px) / 3); 
+}
+
+
 .border-shadow{
     display: block;
 }
