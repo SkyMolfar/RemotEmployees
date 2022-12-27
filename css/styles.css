@@ -187,8 +187,6 @@ p{
     background-position: center center;
     background-size: cover;
     
-
-
 }
 
 .hero-title{
@@ -361,13 +359,12 @@ img {
 }
 
 .social-icon{
-
     margin: 0px 32px;
-
 }
+
+
 .social-item{
     display: inline-block;
-    
     width: 44px;
     height: 44px;
     margin-bottom: 30px;
@@ -401,16 +398,11 @@ img {
     justify-content: center;
     align-items: center;
     gap: 30px;
-
 }
 
 .client-card{
-    
     border: 1px solid #AFB1B8;
-    border-radius: 4px;
-   
-   
-    
+    border-radius: 4px; 
 }
 
 .client-link{
@@ -436,7 +428,6 @@ img {
     padding-right: 15px;
     margin: 60px auto; 
     gap: 70px;
-
 }
 
 .background{
@@ -515,10 +506,9 @@ img {
 
 
 .footer-icon{
-
     margin-right: auto;
-
 }
+
 .social-item{
     display: inline-block;
     width: 44px;
@@ -588,7 +578,6 @@ img {
     justify-content: center;
     gap: 8px;
     margin-bottom: 56px;
-      
 }
 
 .project-button{
@@ -602,8 +591,7 @@ img {
     background: #F5F4FA;
     border-radius: 4px;
     border: transparent;
-    padding: 6px 22px;
-    
+    padding: 6px 22px; 
 }
 
 .project-button:hover,
@@ -624,11 +612,10 @@ img {
     flex-basis: calc((100% - 60px) / 3); 
 }
 
-
 .border-shadow{
     display: block;
+    text-decoration: none;
 }
-
 
 .border-shadow:hover,
 .border-shadow:focus{
