@@ -150,7 +150,7 @@ p{
     line-height: 16px;
     color: var(--gray-color);
     fill: var(--gray-color);
-    text-decoration: none, fill;
+    text-decoration: none;
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); 
@@ -454,10 +454,7 @@ img {
     gap: 30px;
 }
 
-.client-card{
-    border: 1px solid #AFB1B8;
-    border-radius: 4px; 
-}
+
 
 .client-link{
     display: flex;
@@ -465,7 +462,8 @@ img {
     height: 92px;
     width: 170px;
     fill:  #AFB1B8;
-    border: 1px solid #AFB1B8;;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px; 
     transition-property: fill, border;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -570,7 +568,12 @@ img {
 
 
 .footer-icon{
+    margin-top: 20px;
     margin-right: auto;
+}
+
+.social-footer{
+    margin-top: 10px;
 }
 
 .social-item{
@@ -766,8 +769,7 @@ img {
     font-size: 18px;
     line-height: 36px;    
     color: var(--black-color);
-    margin-top: 20px;
-    margin-bottom: 4px;
+    margin-bottom: 0;
 }
 
 
@@ -778,8 +780,13 @@ img {
     font-size: 16px;
     line-height: 30px;
     color: var(--gray-color);
-    margin-bottom: 20px;
+    margin-bottom: 0;
+    
 }
+
+
+/*Модалка*/
+
 
 .backdrop{
     position: fixed;
