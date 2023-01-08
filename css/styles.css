@@ -829,10 +829,125 @@ img {
    border: 1px solid rgba(0, 0, 0, 0.1);
    border-radius: 50%;
    cursor: pointer;
+   transition-property: fill;
+   transition-duration: 250ms;
+   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); 
 
 }
 
+.close:hover,
+.close:focus{
+   fill: var(--blu-color);
+}
 
+.form{
+    position: absolute;
+    top: 40px;
+    left: 40px;
+}
+
+.form-titel{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    margin-left: 30px;
+    letter-spacing: 0.03em;
+    color: #212121;
+}
+
+.form-field{
+    position: relative;
+    display: inline-block;
+    width: 448px;
+    height: 40px;
+    margin-top: 28px;
+}
+
+.form-field input{
+    width: 448px;
+    height: 40px;
+    left: 576px;
+    top: 382px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    cursor: pointer;
+    transition-property: background-color, border;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); 
+}
+
+.form-field input:hover,
+.form-field input:focus{
+    border: solid #2196F3;
+}
+
+.form-label{
+    position: absolute;
+    left: 0;
+    top: -24px;
+    
+}
+
+.coments{
+    position: relative;
+    margin-top: 28px;
+    margin-bottom: 20px;
+}
+
+.coments-extarea{
+    
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.01em;
+    color: rgba(117, 117, 117, 0.5);
+    width: 448px;
+    height: 120px;
+    padding: 12px 16px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    cursor: pointer;
+    transition-property: border;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); 
+}
+
+.coments-extarea:hover,
+.coments-extarea:focus{
+    border:solid var(--blu-color);  
+}
+
+
+
+.policy{
+    margin-bottom: 30px;
+}
+
+.link-form{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;    font-size: 16px;
+    line-height: 30px;
+    padding: 10px 24px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: var(--white-color);
+    background-color: var(--blu-color);
+    margin: 0 auto;
+    border-radius: 4px;
+    border: var(--blu-color);
+    cursor: pointer;
+   
+}
+
+.link-contract{
+    color: var(--blu-color)
+}
 
 
 
