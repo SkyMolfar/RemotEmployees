@@ -342,6 +342,26 @@
                        </li>
                    </ul>
                 </div>
+               <form class="form-footer">
+                    <span class="form-titel">Підпишіться на розсилку</span>
+                    <ul class="listed-form">
+                        <li class="footer-field">
+                            <input 
+                            type="text"
+                            class="listed-input"
+                            name="name"
+                            id="name"
+                            placeholder="E-mail"/>
+                        </li>
+                        <li>
+                            <button class="form-subscription">Підписатися
+                                <svg class="subscription-icon" width="24" height="24">
+                                    <use href="./image/icons.svg#icon-icon-send"></use>
+                                </svg>
+                            </button>
+                        </li>
+                    </ul>
+                </form> 
             </div>
         </address>
     </footer>
@@ -359,8 +379,10 @@
                     type="text"
                     class="form-input"
                     name="name"
-                    id="name"
-                    placeholder=" ">
+                    id="name"/>
+                    <svg class="form-icons" width="12" height="12">
+                        <use href="./image/icons.svg#icon-name"></use>
+                    </svg>
                     <label for="name" class="form-label">Ім'я</label>
                 </div>
                 <div class="form-field">
@@ -368,8 +390,10 @@
                     type="tel"
                     class="form-input"
                     name="tel"
-                    id="tel"
-                    placeholder=" ">
+                    id="tel"/>
+                    <svg class="form-icons" width="12" height="12">
+                        <use href="./image/icons.svg#icon-tel"></use>
+                    </svg>
                     <label for="tel" class="form-label">Телефон</label>
                 </div>
                 <div class="form-field">
@@ -377,12 +401,14 @@
                     type="email"
                     class="form-input"
                     name="email"
-                    id="email"
-                    placeholder=" ">
+                    id="email"/>
+                    <svg class="form-icons" width="12" height="12">
+                        <use href="./image/icons.svg#icon-mail"></use>
+                    </svg>
                     <label for="email" class="form-label">Пошта</label>
                 </div>
                 <div class="coments">
-                    <textarea class="coments-extarea" name="coment" id="coment" cols="30" rows="10"  style="width: 451px; height: 116px;" placeholder="Введіть текст"></textarea>
+                    <textarea class="coments-textarea" name="coment" id="coment" cols="30" rows="10"  style="width: 451px; height: 116px;" placeholder="Введіть текст"></textarea>
                     <label for="coments" class="form-label">Коментар</label>
                 </div>
                 <div class="policy">
