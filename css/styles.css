@@ -635,15 +635,14 @@ img {
     height: 50px;
     left: 815px;
     top: 2784px;
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-    border-radius: 4px;
-    background-color: #2F303A;
+    
 
 }
 
 .listed-input{
     width: 100%;
+    padding-left: 16px;
+    background-color: #2F303A;
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
@@ -918,9 +917,7 @@ img {
 }
 
 .form{
-    position: absolute;
-    top: 40px;
-    left: 40px;
+    position: relative;
 }
 
 .form-titel{
@@ -1047,7 +1044,6 @@ img {
     
 }
 
-
 .link-form{
     font-family: 'Roboto';
     font-style: normal;
@@ -1059,8 +1055,8 @@ img {
     text-align: center;
     color: var(--white-color);
     background-color: var(--blu-color);
-    margin: 30px auto 0;
-    
+    margin: 0 auto;
+    margin-top: 30px;
     border-radius: 4px;
     border: var(--blu-color);
     cursor: pointer;
