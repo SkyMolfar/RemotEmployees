@@ -64,7 +64,7 @@ p{
     flex-grow: 1;
 }
 
-.header-logo{
+.nav-logo{
     list-style: none;
     display: flex;
     align-items: center;
