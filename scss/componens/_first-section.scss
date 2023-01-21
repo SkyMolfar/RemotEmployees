@@ -1,0 +1,52 @@
+
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+
+.first-section{
+    display: flex;
+    align-content: center;
+    gap: 30px;
+}
+
+.section-list{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    text-transform: uppercase;
+    color: var(--black-color);
+}
+
+.section-text{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: var(--gray-color);
+}
+
+.section-icon{
+    display: flex;
+    align-content: center;
+    height: 120px;
+    background-color: var(--white-color-icon);
+    border-radius: 4px;
+    margin-bottom: 30px;
+}
+.list-icon{
+    margin: auto;
+    fill: var(--fill-icon-black);
+}
+
