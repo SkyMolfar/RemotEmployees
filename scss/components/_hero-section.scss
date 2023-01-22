@@ -1,0 +1,38 @@
+
+
+.hero-section{
+    padding-bottom: 94px;
+    
+    &__background{
+        display: flex;
+        padding: 200px 0px;
+        width: 100%;
+        background: #2F303A;
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(../image/Img.jpg);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        
+    }
+    
+    &__title{
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 900;
+        font-size: 44px;
+        line-height: 60px;
+        text-align: center;
+        text-transform: uppercase;
+        color: var(--white-color);
+        margin-bottom: 30px;
+        Width: 696px;
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+
+
+

@@ -11,3 +11,21 @@ h3,
 p{
     margin-top: 0;
 }
+
+.section-title {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    color: var(--black-color);
+    margin-bottom: 50px;
+  }
+  
+
+  img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}

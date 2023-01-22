@@ -1,0 +1,28 @@
+/*Hero button*/
+
+.button-link{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;    font-size: 16px;
+    line-height: 30px;
+    padding: 10px 24px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: var(--white-color);
+    background-color: var(--blu-color);
+    margin: 0 auto;
+    border-radius: 4px;
+    border: var(--blu-color);
+    transition-property: background-color, border;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); 
+
+    
+&:hover,
+&:focus{
+   cursor: pointer;
+   background-color: var(--hover-dlu-color);
+   border: var(--hover-dlu-color);
+}
+}

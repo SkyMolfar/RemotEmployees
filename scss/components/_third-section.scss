@@ -1,0 +1,40 @@
+
+.third-section{
+    background: var(--white-color-icon);
+
+    
+&__title{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: var(--black-color);
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+&__paragraf{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;    
+    color: var(--gray-color);
+    margin-bottom: 30px;
+}
+
+&__border{
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    background-color: var(--white-color);
+}
+
+&__foto{
+    display: flex;
+    gap: 30px;
+}
+}
+

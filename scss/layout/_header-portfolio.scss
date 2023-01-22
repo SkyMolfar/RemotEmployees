@@ -1,49 +1,56 @@
 
 .header-portfolio{
     padding-top: 24px;
-    padding-bottom: 25px;
+    
     border: 1px solid #ECECEC;
+
+    &__logo{
+        list-style: none;
+        display: flex;
+        align-items: center;
+        gap: 50px;
+
+    }
+
+    &__studio{  
+        color: var(--black-color);
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 16px;
+        text-decoration: none;
+        transition-property: fill, background-color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+        &:hover,
+        &:focus{
+        color: var(--blu-color);
+    }
+    }
+    
+    &__nav{
+        position: relative;
+        color: var(--blu-color);
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 16px;
+        text-decoration: none;
+    }
+    
+    &__nav::after{
+        position: absolute;
+        content: "";
+        width: 78px;
+        height: 4px;
+        background: var(--blu-color);
+        border-radius: 2px;
+        top: 51px;
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
 }
 
-.portfolio-studio{  
-    color: var(--black-color);
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 16px;
-    text-decoration: none;
-    transition-property: fill, background-color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-
-
-.portfolio-studio:hover,
-.portfolio-studio:focus{
-    color: var(--blu-color);
-}
-
-.portfolio-nav{
-    position: relative;
-    color: var(--blu-color);
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 16px;
-    text-decoration: none;
-}
-
-.portfolio-nav::after{
-    position: absolute;
-    content: "";
-    width: 78px;
-    height: 4px;
-    background: var(--blu-color);
-    border-radius: 2px;
-    top: 44px;
-    left: 50%;
-    transform: translate(-50%, 0);
-}

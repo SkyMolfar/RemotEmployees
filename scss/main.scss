@@ -1,24 +1,26 @@
 /*utils*/
-@import'/scss/utils/fonts';
+@import './utils/fonts';
 @import './utils/variables';
 
 /*base*/
-@import'/scss/base/reset';
+@import './base/reset';
 
 /*componens*/
-@import'/scss/componens/button';
-@import'/scss/componens/first-section';
-@import'/scss/componens/fourth-section';
-@import'/scss/componens/hero-section';
-@import'/scss/componens/portfolio-section';
-@import'/scss/componens/second-section';
-@import'/scss/componens/section';
-@import'/scss/componens/third-section';
+@import './components/button';
+@import './components/first-section';
+@import './components/hero-section';
+@import './components/portfolio-section';
+@import './components/second-section';
+@import './components/section';
+@import './components/third-section';
+@import './components/clients-section';
 
 /*layout*/
-@import'/scss/layout/conteiner';
-@import'/scss/layout/footer';
-@import'/scss/layout/forms';
-@import'/scss/layout/header-portfolio';
-@import'/scss/layout/header';
-@import'/scss/layout/modal';
+@import './layout/container';
+@import './layout/footer';
+@import './layout/forms';
+@import './layout/header-portfolio';
+@import './layout/header';
+@import './layout/modal';
+@import './layout/logo';
+@import'./layout/icons';

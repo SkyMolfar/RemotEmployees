@@ -1,0 +1,44 @@
+.first-section{
+
+    &__list{
+        display: flex;
+        align-content: center;
+        gap: 30px;
+    }
+    
+    &__title{
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 16px;
+        text-transform: uppercase;
+        color: var(--black-color);
+    }
+    
+    &__text{
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+        color: var(--gray-color);
+    }
+    
+    &__icon{
+        display: flex;
+        align-content: center;
+        height: 120px;
+        background-color: var(--white-color-icon);
+        border-radius: 4px;
+        margin-bottom: 30px;
+    }
+    &__list-icon{
+        margin: auto;
+        fill: var(--fill-icon-black);
+    }
+}
+
+
+
+

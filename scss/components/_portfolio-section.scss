@@ -1,5 +1,7 @@
 
-.title-project{
+.portfolio{
+
+&__title{
     list-style: none;
     display: flex;
     justify-content: center;
@@ -7,7 +9,7 @@
     margin-bottom: 56px;
 }
 
-.project-button{
+&__button{
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
@@ -22,40 +24,48 @@
     transition-property: fill, background-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    
-}
 
-.project-button:hover,
-.project-button:focus{
+    &:hover,
+    &:focus{
     cursor: pointer;
     background-color: var(--blu-color);
     color: var(--white-color);
 }
+    
+}
 
-.project-list{  
+
+
+&__list{  
     flex-wrap: wrap;
     display: flex;
     gap: 30px;
     margin-bottom: 30px;
 }
 
-.project-box{
+&__box{
     flex-basis: calc((100% - 60px) / 3); 
 }
 
-.border-shadow{
+&__border-shadow{
     display: block;
     text-decoration: none;
     background-color: rgba(33, 150, 243, 0.9);
 
+    
+&:hover {
+    background: var(--white-color);
+    border: 1px solid #EEEEEE;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16); 
+    }
 }
 
-.project-image{
+&__project-image{
     position: relative;
     overflow: hidden;
 }
 
-.project-overlay{
+&__project-overlay{
     position: absolute;
     top: 0;
     left: 0;
@@ -76,28 +86,23 @@
     
 }
 
-.project-box:hover .project-overlay{
+&__box:hover &__project-overlay{
     transform: translateY(0);
     opacity: 1;
 }
 
 
 
-.border-shadow:hover {
-    background: var(--white-color);
-    border: 1px solid #EEEEEE;
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16); 
-    }
 
 
-.border-project{
+&__border-project{
     background: var(--white-color);
     border: 1px solid #EEEEEE;
     padding: 20px 24px;
   
 }
 
-.nime-project{
+&__nime-project{
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
@@ -108,7 +113,7 @@
 }
 
 
-.description-project{
+&__description-project{
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
@@ -117,4 +122,5 @@
     color: var(--gray-color);
     margin-bottom: 0;
     
+}
 }
