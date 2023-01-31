@@ -1,0 +1,109 @@
+.mobile-menu{
+     position: fixed;
+     top: 0;
+     left: 0;
+     bottom: 0;
+     right: 0;
+     padding-left: 40px;
+     padding-top: 48px;
+     background-color: var(--white-color);
+     display: none;
+     
+    
+
+    &__nav{
+        margin-bottom: 32px;
+    }
+
+    &__close{
+        position: absolute;
+        top: 10px;
+        right: 15px;
+        background-color: var(--white-color);
+        border: none;
+        cursor: pointer;    
+        transition-property: color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+
+        &:hover,
+        &:focus{
+            fill: var(--blu-color);
+        }
+    }
+
+
+    &__studio-nav{
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 40px;
+        line-height: 47px;
+        letter-spacing: 0.02em;
+        color:var(--black-color);
+        text-decoration: none;
+        margin-bottom: 32px;
+        cursor: pointer;
+        transition-property: color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+        &:hover,
+        &:focus{
+            color: var(--blu-color);
+        }
+    }
+
+    &__list-contact{
+        margin-bottom: 64px;
+    }
+
+    &__link-number{
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 34px;
+        line-height: 40px;
+        letter-spacing: 0.02em;
+        color: var(--blu-color);
+        margin-bottom: 32px;
+        text-decoration: none;
+        cursor: pointer;
+   }
+    
+   &__link-mail{
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 34px;
+        line-height: 40px;
+        letter-spacing: 0.02em;
+        color: var(--gray-color);
+        text-decoration: none;
+        cursor: pointer;
+        
+   }
+
+   &__social{
+    display: flex;
+    gap: 20px;
+   }
+
+   &__social-list{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.02em;
+    color:var(--blu-color);
+    cursor: pointer;
+   }
+
+ 
+}
+
+.mobile-menu.is-open{
+    display: block;
+}

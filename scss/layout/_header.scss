@@ -6,10 +6,14 @@
     
 
     &__container{
+        
+        @media (min-width: 480px){
         display: flex;
         justify-content: space-between;
         align-items: center;
         gap: 318px;
+
+        }
     }
     
     &__nav{
@@ -26,6 +30,9 @@
     }
 
     &__studio{
+        display: none;
+
+        @media (min-width: 480px){
         position: relative;
         color: var(--blu-color);
         font-family: 'Roboto';
@@ -34,10 +41,13 @@
         font-size: 14px;
         line-height: 16px;
         text-decoration: none; 
-    
+        }
     }
     
     &__studio::after{
+        display: none;
+
+        @media (min-width: 480px){
         position: absolute;
         content: "";
         width: 48px;
@@ -47,9 +57,13 @@
         top: 51px;
         left: 50%;
         transform: translate(-50%, 0);
+        }
     }
     
     &__studio-nav{
+        display: none;
+
+    @media (min-width: 480px){
         font-family: 'Roboto';
         font-style: normal;
         font-weight: 500;
@@ -60,20 +74,26 @@
         transition-property: color;
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-        
-        &:hover,
-        &:focus{
-            color: var(--blu-color);
+            
+            &:hover,
+            &:focus{
+                color: var(--blu-color);
+            }
         }
+       
     }
     
    
 
     &__list{
-        list-style: none;
-        display: flex;
-        align-items: center;
-        gap: 40px;
+        display: none;
+
+        @media (min-width: 480px){
+            list-style: none;
+            display: flex;
+            align-items: center;
+            gap: 40px;
+        }    
     }
     
     &__link-mail{
@@ -129,6 +149,29 @@
         color: var(--blu-color);
         fill: var(--blu-color);
     }    
+    }
+    &__burger{
+        position: absolute;
+        top: 10px;
+        right: 15px;
+        fill: var(--black-color);
+        background-color: var( --white-color);
+        border: none;
+        cursor: pointer;
+        transition-property: fill;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); 
+
+        &:hover,
+        &:focus{
+            fill: var(--blu-color);
+        }
+
+       @media (min-width: 480px){
+        display: none;
+        
+       }
+
     }
 }
 
