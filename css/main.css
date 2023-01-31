@@ -554,6 +554,7 @@ img {
   gap: 20px;
 }
 .mobile-menu__social-list {
+  position: relative;
   font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
@@ -563,6 +564,19 @@ img {
   color: var(--blu-color);
   cursor: pointer;
 }
+.mobile-menu__social-list::before {
+  content: "";
+  position: absolute;
+  width: 0px;
+  height: 22px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 2px;
+  top: 0px;
+  right: -10px;
+}
+.mobile-menu .social-list:first-child {
+  display: none;
+}
 
 .mobile-menu.is-open {
   display: block;
@@ -570,11 +584,22 @@ img {
 
 /*layout*/
 .container {
-  width: 1200px;
+  max-width: 450px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
 }
+@media (min-width: 480px) {
+  .container {
+    max-width: 768px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    width: 1200px;
+  }
+}
+
 .container:nth-child(1) {
   padding-bottom: 32px;
 }
@@ -1011,13 +1036,13 @@ img {
           flex-grow: 1;
 }
 .header__logo {
-  list-style: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  list-style: none;
   gap: 50px;
 }
 .header__studio {
@@ -1025,6 +1050,7 @@ img {
 }
 @media (min-width: 480px) {
   .header__studio {
+    display: block;
     position: relative;
     color: var(--blu-color);
     font-family: "Roboto";
@@ -1040,6 +1066,7 @@ img {
 }
 @media (min-width: 480px) {
   .header__studio::after {
+    display: block;
     position: absolute;
     content: "";
     width: 48px;
@@ -1057,6 +1084,7 @@ img {
 }
 @media (min-width: 480px) {
   .header__studio-nav {
+    display: block;
     font-family: "Roboto";
     font-style: normal;
     font-weight: 500;
@@ -1080,13 +1108,13 @@ img {
 }
 @media (min-width: 480px) {
   .header__list {
-    list-style: none;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    list-style: none;
     gap: 40px;
   }
 }

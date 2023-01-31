@@ -1,10 +1,20 @@
 .container{
-    width: 1200px;
+    max-width: 450px;
     padding-left: 15px;
     padding-right: 15px;
-    margin: 0 auto; 
+    margin: 0 auto;  
+
+    @media (min-width: 480px){
+        max-width:768px;
+    }
+
+    @media (min-width: 768px){
+        width: 1200px;
+    }
+        
+    }
     
-&:nth-child(1){
+    .container:nth-child(1){
     padding-bottom: 32px;
 }
-}
+

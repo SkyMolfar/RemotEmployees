@@ -23,9 +23,10 @@
     }
     
     &__logo{
-        list-style: none;
+        
         display: flex;
         align-items: center;
+        list-style: none;
         gap: 50px;
     }
 
@@ -33,54 +34,54 @@
         display: none;
 
         @media (min-width: 480px){
-        position: relative;
-        color: var(--blu-color);
-        font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 500;
-        font-size: 14px;
-        line-height: 16px;
-        text-decoration: none; 
-        }
+            display: block;
+            position: relative;
+            color: var(--blu-color);
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 16px;
+            text-decoration: none; 
+        }        
     }
     
     &__studio::after{
         display: none;
-
         @media (min-width: 480px){
-        position: absolute;
-        content: "";
-        width: 48px;
-        height: 4px;
-        background: var(--blu-color);
-        border-radius: 2px;
-        top: 51px;
-        left: 50%;
-        transform: translate(-50%, 0);
-        }
+            display: block;
+            position: absolute;
+            content: "";
+            width: 48px;
+            height: 4px;
+            background: var(--blu-color);
+            border-radius: 2px;
+            top: 51px;
+            left: 50%;
+            transform: translate(-50%, 0);
+        }       
     }
     
     &__studio-nav{
         display: none;
-
-    @media (min-width: 480px){
-        font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 500;
-        font-size: 14px;
-        line-height: 16px;
-        color: var(--black-color);
-        text-decoration: none;
-        transition-property: color;
-        transition-duration: 250ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-            
+        @media (min-width: 480px){
+            display: block;
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 16px;
+            color: var(--black-color);
+            text-decoration: none;
+            transition-property: color;
+            transition-duration: 250ms;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+                
             &:hover,
             &:focus{
                 color: var(--blu-color);
             }
-        }
-       
+        }       
     }
     
    
@@ -89,9 +90,10 @@
         display: none;
 
         @media (min-width: 480px){
-            list-style: none;
+            
             display: flex;
             align-items: center;
+            list-style: none;
             gap: 40px;
         }    
     }
