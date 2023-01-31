@@ -2,6 +2,7 @@
 .third-section{
     background: var(--white-color-icon);
 
+
     
 &__title{
     font-family: 'Roboto';
@@ -33,8 +34,15 @@
 }
 
 &__foto{
-    display: flex;
-    gap: 30px;
+    display: block;
+    width: 100%;
+
+    @media (min-width: 480px){
+        display: flex;
+        gap: 30px;
+    }
+ 
+    
 }
 }
 

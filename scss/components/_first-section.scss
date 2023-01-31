@@ -1,9 +1,15 @@
 .first-section{
 
     &__list{
-        display: flex;
-        align-content: center;
-        gap: 30px;
+        display: block;
+        margin: 10px 30px;
+
+        @media (min-width: 480px){
+            display: flex;
+            align-content: center;
+            gap: 30px;
+        }
+    
     }
     
     &__title{
