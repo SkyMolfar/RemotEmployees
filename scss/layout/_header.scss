@@ -6,6 +6,7 @@
     
 
     &__container{
+        position: relative;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -26,6 +27,11 @@
     }
 
     &__studio{
+        
+        display: none;
+
+        @media (min-width: 768px){
+        display: block;
         position: relative;
         color: var(--blu-color);
         font-family: 'Roboto';
@@ -34,7 +40,7 @@
         font-size: 14px;
         line-height: 16px;
         text-decoration: none; 
-    
+        }
     }
     
     &__studio::after{
@@ -50,6 +56,11 @@
     }
     
     &__studio-nav{
+
+        display: none;
+
+        @media (min-width: 768px){
+        display: block;
         font-family: 'Roboto';
         font-style: normal;
         font-weight: 500;
@@ -66,14 +77,20 @@
             color: var(--blu-color);
         }
     }
+    }
     
    
 
     &__list{
+        display: none;
+
+        @media (min-width: 768px){
+
         list-style: none;
         display: flex;
         align-items: center;
         gap: 40px;
+        }
     }
     
     &__link-mail{
@@ -129,6 +146,31 @@
         color: var(--blu-color);
         fill: var(--blu-color);
     }    
+    }
+
+    &__burger{
+
+        position: absolute;
+        top: 10px;
+        right: 15px;
+        fill: var(--black-color);
+        background-color: var(--white-color);
+        border: none;
+        cursor: pointer;
+        transition-property: fill;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); 
+
+        &:hover,
+        &:focus{
+            fill: var(--blu-color);
+        }
+
+       @media (min-width: 768px){
+        display: none;
+        
+       }
+
     }
 }
 
