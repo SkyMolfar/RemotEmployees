@@ -22,8 +22,8 @@
     transition-property: fill, border;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    
     flex-basis: calc((100% - 30px) / 2);
+
     @media (min-width: 768px){
         max-width: 226px;
         flex-basis: calc((100% - 60px) / 3);
