@@ -1,15 +1,33 @@
 .first-section{
-
+    
+    margin-bottom: 60px;
+    
+    @media (min-width: 1200px){
+        margin-bottom: 94px;
+    }
     &__list{
         display: block;
-        margin: 10px 30px;
+        margin-bottom: 30px;
 
-        @media (min-width: 480px){
+        @media (min-width: 768px){
+            align-items: center;
+            flex-wrap: wrap;
             display: flex;
-            align-content: center;
             gap: 30px;
+            
+            
         }
     
+    }
+    &__icon-box{
+        @media (min-width: 768px){
+        flex-basis: calc((100% - 60px) / 2);
+    } 
+
+    @media (min-width: 1200px){
+        flex-basis: calc((100% - 120px) / 4);
+        
+    } 
     }
     
     &__title{
@@ -38,11 +56,14 @@
         background-color: var(--white-color-icon);
         border-radius: 4px;
         margin-bottom: 30px;
+        
     }
     &__list-icon{
         margin: auto;
         fill: var(--fill-icon-black);
     }
+
+
 }
 
 

@@ -1,9 +1,20 @@
 /*Footer-form*/
 
 .footer-form{
+    text-align: center;
     display: block;
     margin-left: auto;
     margin-top: 10px;
+
+    @media (min-width:768px) {
+        margin-right: auto;
+        margin-left: auto;
+        
+    }
+
+    @media (min-width:1200px) {
+        display: flex;
+    }
 
     &__titel{
         font-family: 'Roboto';
@@ -17,16 +28,23 @@
     }
     
     &__listed{
-        display: flex;
+        display: block;
         margin-top: 20px;
+
+        @media (min-width:768px) {
+            margin-bottom: 60px;
+        }
     }
     
     &__field{
-        display: flex;
-        width: 358px;
+        display: block;
+        max-width: 450px;
         height: 50px;
-        left: 815px;
-        top: 2784px;
+
+        @media (min-width:768px) {
+            min-width: 450px;
+        }
+       
         
     
     }
@@ -51,7 +69,8 @@
         font-weight: 700;    
         font-size: 16px;
         line-height: 30px;
-        margin-left: 12px;
+        margin-left: auto;
+        margin-right: auto;
         width: 200px;
         height: 50px;
         left: 1185px;
@@ -72,7 +91,6 @@
         fill: var(--white-color);
     }
 }
-
 /* МОДАЛКА */
 
 .modal-form{

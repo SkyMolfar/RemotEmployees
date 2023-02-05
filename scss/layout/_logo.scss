@@ -8,7 +8,9 @@
     text-decoration: none;
     margin-right: 54px;  
 
-   
+   @media (min-width:768px) {
+    margin-right: 38px; 
+   }
     .accent{
         font-family: 'Raleway';
         font-style: normal;
@@ -20,20 +22,29 @@
 }
 
 .logo-footer{
+
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 700;
-    font-size: 26px;
-    line-height: 31px;
+    font-size: 24px;
+    line-height: 1.58;
     letter-spacing: 0.03em;
+    text-align: center;
     color: var(--white-color);
-    font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 31px;
-    letter-spacing: 0.03em;
-    margin-bottom: 28p;
+    margin-bottom: 28px;
     display: block;
-    margin-bottom: 28px; 
+    margin-left: auto;
+    margin-right: auto;
+
+    @media (min-width: 768px) {
+        font-size: 26px;
+        line-height: 31px;
+    }
+
+    @media (min-width: 1200px) {
+        margin-bottom: 28px;
+        margin-right: 54px;
+    }
+    
+ 
 }

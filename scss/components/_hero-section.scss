@@ -15,21 +15,27 @@
         background-size: cover;
         
     }
-    
     &__title{
         font-family: 'Roboto';
         font-style: normal;
         font-weight: 900;
-        font-size: 44px;
-        line-height: 60px;
+        font-size: 26px;
+        line-height: 42px;
         text-align: center;
+        letter-spacing: 0.06em;
         text-transform: uppercase;
         color: var(--white-color);
-        margin-bottom: 30px;
-        Width: 696px;
-        display: flex;
-        margin-left: auto;
-        margin-right: auto;
+
+        @media (min-width: 768px){
+            font-size: 44px;
+            line-height: 60px;
+            margin-bottom: 30px;
+            width: 696px;
+            display: flex;
+            margin-left: auto;
+            margin-right: auto;
+            
+        }
     }
 }
 

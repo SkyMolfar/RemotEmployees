@@ -1,18 +1,45 @@
 .mobile-menu{
      position: fixed;
+     display: none;
      top: 0;
      left: 0;
-     bottom: 0;
-     right: 0;
-     padding-left: 40px;
-     padding-top: 48px;
+     width: 100%;
+     height: 100%;
      background-color: var(--white-color);
-     display: none;
      
-    
+     
+     &__container{
+
+        max-width: 480px;
+        padding: 48px 40px;
+        
+
+    }
 
     &__nav{
+      margin-bottom: 306px;
+    }
+
+    &__studio-nav{
+        display: block;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 40px;
+        line-height: 47px;
+        letter-spacing: 0.02em;
+        color:var(--black-color);
+        text-decoration: none;
         margin-bottom: 32px;
+        cursor: pointer;
+        transition-property: color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+        &:hover,
+        &:focus{
+            color: var(--blu-color);
+        }
     }
 
     &__close{
@@ -34,32 +61,14 @@
     }
 
 
-    &__studio-nav{
-        font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 500;
-        font-size: 40px;
-        line-height: 47px;
-        letter-spacing: 0.02em;
-        color:var(--black-color);
-        text-decoration: none;
-        margin-bottom: 32px;
-        cursor: pointer;
-        transition-property: color;
-        transition-duration: 250ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
-        &:hover,
-        &:focus{
-            color: var(--blu-color);
-        }
-    }
+   
 
     &__list-contact{
         margin-bottom: 64px;
     }
 
     &__link-number{
+        display: block;
         font-family: 'Roboto';
         font-style: normal;
         font-weight: 500;

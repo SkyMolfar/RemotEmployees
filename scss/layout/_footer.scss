@@ -1,35 +1,76 @@
 /*Footer*/
 .footer{
-    padding-top: 60px;
-    padding-bottom: 60px;
+    
+
+
     &__background{
+
         background-color: #2F303A;
-        width: 1600px;
-        display: flex;
         width: 100%;
+
+        @media (min-width: 768px) {
+            display: flex;
+        }
     }
     
     &__container-footer{
-        display: flex;
-        width: 1200px;
+        max-width: 428px;
+        padding-top: 60px;
         padding-left: 15px;
         padding-right: 15px;
-        margin: 60px auto; 
-        gap: 70px;
+        margin-left: auto;
+        margin-right: auto;
+
+
+        @media (min-width: 768px) {
+            max-width: 768px;
+            display: flex;
+            flex-wrap: wrap;
+        
+        }
+        @media (min-width: 1200px) {
+            min-width: 1158px;
+            flex-wrap: nowrap;
+        }
+    }
+    &__box-nav{
+        text-align: center;
+        margin-bottom: 60px;
+
+        @media (min-width: 768px) {
+           margin-top: 60px;
+           margin-left: 76px;
+           margin-right: 165px;
+        
+        }
+
+        @media (min-width: 1200px) {
+            margin-left: 0;
+            margin-right: 94px;
+        }
+
     }
 
+
+
     &__address{
+        display: block;
         font-family: 'Roboto';
         font-style: normal;
         font-weight: 400;
         font-size: 14px;
-        line-height: 24px;    
+        line-height: 1.14;    
         color: var(--white-color);
         text-decoration: none;
         margin-bottom: 12px;
         transition-property: color;
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+        @media (min-width: 768px){
+            
+            
+        }
     
         &:hover,
         &:focus{
@@ -38,11 +79,12 @@
     }
 
     &__mail-footer{
+        display: block;
         font-family: 'Roboto';
         font-style: normal;
         font-weight: 500;
         font-size: 14px;
-        line-height: 16px;
+        line-height: 1.14;
         color:var(--white-color);
         text-decoration: none;
         margin-bottom: 12px;
@@ -57,11 +99,12 @@
     }
 
     &__link-number{
+        display: block;
         font-family: 'Roboto'; 
         font-style: normal;
         font-weight: 500;
         font-size: 14px;
-        line-height: 16px;
+        line-height: 1.14;
         color: var(--gray-color);
         fill: var(--gray-color);
         text-decoration: none;
@@ -76,7 +119,31 @@
     }
     }
 
+
+    
+    &__social{
+        text-align: center;
+        margin-bottom: 60px;
+
+        @media (min-width: 768px) {
+            margin-top: 60px;
+           
+         
+         }
+    }
+
+    &__social-item{
+        display: inline-block;
+        width: 44px;
+        height: 44px;
+        margin-bottom: 30px;
+        margin-right: 10px;
+
+    }
+    
     &__title{
+        display: block;
+        margin-bottom: 32px;
         font-family: 'Roboto';
         font-style: normal;
         font-weight: 700;
@@ -85,27 +152,27 @@
         letter-spacing: 0.03em;
         text-transform: uppercase;
         color: var(--white-color);
-    }
-    &__icon{
-        display: flex;
-        gap: 10px;
-        margin-top: 20px;
-        margin-right: auto;
-    }
 
+        @media (min-width:1200px) {
+            display: flex;
+            margin-bottom: 20px;
+            
+        }
+    }
     
-    &__social{
-        margin-top: 10px;
-}
+    &__icon{
+        margin-left: auto;
+        margin-right: auto;
 
-    &__social-item{
-        display: inline-block;
-        width: 44px;
-        height: 44px;
-    margin-bottom: 30px;
-        gap: 10px;
-
-}
+        @media (min-width: 768px) {
+            display: block;
+            gap: 10px;
+            margin-top: 20px;
+            margin-right: auto;
+            
+        }
+       
+    }
 
     &__link{
         display: flex;
@@ -124,8 +191,6 @@
     &:focus{
         fill: var(--white-color);
         background: var(--blu-color);
+    }
+    }
 }
-}
-}
-
-
