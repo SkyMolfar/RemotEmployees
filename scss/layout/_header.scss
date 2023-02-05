@@ -54,18 +54,6 @@
             line-height: 16px;
             text-decoration: none; 
         }
-
-        @media (min-width: 480px){
-            display: block;
-            position: relative;
-            color: var(--blu-color);
-            font-family: 'Roboto';
-            font-style: normal;
-            font-weight: 500;
-            font-size: 14px;
-            line-height: 16px;
-            text-decoration: none; 
-        }
     }
     
     &__studio::after{
@@ -239,8 +227,9 @@
     }
 
     &__burger{
+
         position: absolute;
-        top: 10px;
+        top: 26px;
         right: 15px;
         fill: var(--black-color);
         background-color: var( --white-color);
@@ -255,7 +244,7 @@
             fill: var(--blu-color);
         }
 
-        @media (min-width: 480px){
+        @media (min-width: 768px){
             display: none;
             
         }
