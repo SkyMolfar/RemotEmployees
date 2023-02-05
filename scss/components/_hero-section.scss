@@ -13,6 +13,10 @@
         background-repeat: no-repeat;
         background-position: center center;
         background-size: cover;
+
+        @media (min-resolution: 2dppx) {
+            background-image: url(../image/Img@2x.jpg) 
+        }
         
     }
     &__title{
