@@ -6,15 +6,20 @@
     &__container{
 
         position: relative;
-        padding-top: 16px;
-        padding-bottom: 16px;
+        padding-top: 10px;
+        padding-bottom: 10px;
 
         @media (min-width: 480px){
+            padding-top: 21px;
+            padding-bottom: 21px;
+        }
+        
+        @media (min-width: 768px){
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding-top: 32px;
-            padding-bottom: 20px;
+            padding-top: 21px;
+            padding-bottom: 21px;
         
         }
 
@@ -63,7 +68,7 @@
         height: 4px;
         background: var(--blu-color);
         border-radius: 2px;
-        top: 42px;
+        top: 44px;
         left: 50%;
         transform: translate(-50%, 0);
 
@@ -114,24 +119,8 @@
             color: var(--blu-color);
         }
     
-        @media (min-width: 480px){
-            display: block;
-            font-family: 'Roboto';
-            font-style: normal;
-            font-weight: 500;
-            font-size: 14px;
-            line-height: 16px;
-            color: var(--black-color);
-            text-decoration: none;
-            transition-property: color;
-            transition-duration: 250ms;
-            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-                
-            &:hover,
-            &:focus{
-                color: var(--blu-color);
-            }
-        }
+        
+        
     }
     }
     
@@ -146,18 +135,9 @@
         }
         @media (min-width: 1200px){
             list-style: none;
-
-        @media (min-width: 768px){
-        display: flex;
-        align-items: center;
-        gap: 40px;
-        }
-        @media (min-width: 480px){
             display: flex;
-            align-items: center;
             gap: 40px;
-
-        }
+    
         }
     }
     
@@ -169,6 +149,7 @@
         font-weight: 500;
         font-size: 12px;
         line-height: 1.16;
+        margin-bottom: 10px;
         color: var(--gray-color);
         fill: var(--gray-color);
         text-decoration: none;
@@ -196,10 +177,7 @@
         align-items: center;
     
     }
-    
-    &__contact{
-        margin-right: 8px;
-    }
+   
     
     &__link-number{
         font-family: 'Roboto'; 
@@ -226,11 +204,14 @@
         }    
     }
 
-    &__burger{
+     
+    &__contact{
+        margin-right: 8px;
+    }
 
-        position: absolute;
-        top: 26px;
-        right: 15px;
+    &__burger{
+        display: flex;
+        padding: 0;
         fill: var(--black-color);
         background-color: var( --white-color);
         border: none;

@@ -25,9 +25,14 @@
                         <li><a href="./portfolio.html" class="header__studio-nav">Портфоліо</a></li>
                         <li><a href="#" class="header__studio-nav">Контакти</a></li>
                     </ul>
+                    <button class="header__burger js-open-menu" type="button">
+                        <svg width="40" height="40">
+                            <use href="./image/icons.svg#icon-menu_40px"></use>
+                        </svg>
+                    </button>
                 </nav>
                 <ul class="header__list">
-                    <li class="header__list-contact">
+                    <li>
                         <a href="mailto:info@devstudio.com" class="header__link-mail">
                             <svg class="header__contact" height="16" width="12">
                                 <use href="./image/icons.svg#icon-envelope"></use>
@@ -35,16 +40,11 @@
                         </a>
                     </li>
                     <li><a href="tel:+380961111111" class="header__link-number">
-                        <svg class="header__contact" height="16" width="12">
+                        <svg class="header__contact" height="14" width="10">
                             <use href="./image/icons.svg#icon-smartphone"></use>
                         </svg>+38 096 111 11 11</a>
                     </li>
                 </ul>
-                <button class="header__burger js-open-menu" type="button">
-                    <svg width="40" height="40">
-                        <use href="./image/icons.svg#icon-menu_40px"></use>
-                    </svg>
-                </button>
             </div>
         </div>
     </header>
@@ -344,7 +344,7 @@
     <footer class="footer">
         <address class="footer__background">
             <div class="footer__container-footer">
-                <ul class="footer__box-nav">
+                <ul>
                     <li><a href="./index.html" lang="en" class="logo logo-footer">
                         <span class="accent">Web</span>Studio</a></li>
                     <li><a href="https://goo.gl/maps/HV8BAcvppS4aVWNn8" class="footer__address">м. Київ, пр-т Лесі Українки, 26</a></li>
@@ -469,12 +469,11 @@
         </div>
     </div>
     <div class="mobile-menu js-menu-container">
-        <div class="conteiner mobile-menu__conteiner">
-            <button class="mobile-menu__close js-close-menu" type="button">
-                <svg width="40" height="40">
-                    <use href="./image/icons.svg#icon-close_mobile"></use>
-                </svg>
-            </button>
+        <button class="mobile-menu__close js-close-menu" type="button">
+            <svg width="40" height="40">
+                <use href="./image/icons.svg#icon-close_mobile"></use>
+            </svg>
+        </button>
             <ul class="mobile-menu__nav">
                 <li><a href="./index.html" class="mobile-menu__studio-nav">Студія</a></li>
                 <li><a href="./portfolio.html" class="mobile-menu__studio-nav">Портфоліо</a></li>
@@ -496,7 +495,6 @@
                 <li class="mobile-menu__social-list">Facebook</li>
                 <li class="mobile-menu__social-list">LinkedIn</li>
             </ul>           
-        </div>
     </div>
     <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
