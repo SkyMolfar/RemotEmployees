@@ -1,23 +1,24 @@
 
 .third-section{
     background: var(--white-color-icon);
-    margin-bottom: 60px;
+    padding-bottom: 60px;
+    padding-top: 60px;
 
     @media (min-width:1200px) {
-        margin-bottom: 94px;
+        padding-bottom: 94px;
+        padding-top: 94px;
     }
     &__foto{
         display: block;
         margin-left: auto;
         margin-right: auto;
         width: 100%;
+        height: auto;
         
-        
-    
         @media (min-width: 768px){
             display: flex;
             flex-wrap: wrap;
-            gap: 40px;
+            gap: 30px;
               
         }
     }

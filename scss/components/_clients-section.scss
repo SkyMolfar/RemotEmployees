@@ -1,10 +1,14 @@
 .client-section{
-
+padding-bottom: 60px;
+padding-top: 60px;
+@media (min-width:1200px) {
+    padding-bottom: 94px;
+    padding-top: 94px;
+}
 &__list{
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
-    margin-bottom: 30px;
     align-items: center;
    
     
@@ -15,7 +19,7 @@
     display: flex;
     align-items: center;
     height: 92px;
-    max-width: 184px;
+    max-width: 210px;
     fill:  var(--social-color);
     border: 1px solid var(--social-color);
     border-radius: 4px; 

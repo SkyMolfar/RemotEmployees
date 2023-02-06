@@ -56,8 +56,7 @@
                     <button class="button-link" data-modal-open >Замовити послугу</button>
                 </div> 
             </div>
-        </section>
-        
+        </section>        
             <section class="section first-section">
                 <div class="container">
                     <h2 class="visually-hidden">Наші переваги</h2>
@@ -107,23 +106,23 @@
                     <ul class="second-section__image-list">
                         <li class="second-section__image"><img
                             srcset=
-                            "./image/img-16.jpg 1x, 
-                            ./image/img-16@2x.jpg 2x" 
-                            src="./image/img-16.jpg" 
+                            "./image/team/desk/img-16.jpg 1x, 
+                            ./image/team/desk/img-16@2x.jpg 2x" 
+                            src="./image/team/desk/img-16.jpg" 
                             alt="Людина пише програму">
                             <div class="second-section__text">Десктопні додатки</div>
                         </li>
                         <li class="second-section__image"><img
-                            srcset="./image/img-1.jpg 1x,
-                            ./image/img-1@2x.jpg 2x" 
-                            src="./image/img-1.jpg" 
+                            srcset="./image/team/desc/img-1.jpg 1x,
+                            ./image/team/desk/img-1@2x.jpg 2x" 
+                            src="./image/team/desk/img-1.jpg" 
                             alt="Людина за комп'ютером зі смартфоном в руках">
                             <div class="second-section__text">Мобільні додатки</div>
                         </li>
                         <li class="second-section__image"><img
-                            srcset="./image/img-2.jpg 1x,
-                            ./image/img-2@2x.jpg 2x"
-                            src="./image/img-2.jpg" 
+                            srcset="./image/team/desk/img-2.jpg 1x,
+                            ./image/team/desk/img-2@2x.jpg 2x"
+                            src="./image/team/desk/img-2.jpg" 
                             alt="Людина тримає планшет та ручку">
                             <div class="second-section__text">Дизайнерські рішення</div>
                         </li>
@@ -135,12 +134,31 @@
                     <h2 class="section-title">Наша команда</h2>
                     <ul class="third-section__foto">
                         <li class="third-section__border">
-                            <img
-                            srcset=
-                            "./image/img-3.jpg 1x,
-                            ./image/img-3@2x.jpg 2x"
-                            src="./image/img-3.jpg" 
-                            alt="Чоловік в окулярах і з бородою посміхається">
+                            <picture>
+                                <source
+                                    media="(min-width:1200px)"
+                                    srcset= "
+                                    ./image/team/desk/img-3.jpg 1x,
+                                    ./image/team/desk/img-3@2x.jpg 2x
+                                    "
+                                />
+                                <source
+                                    media="(min-width:768px)"
+                                    srcset="
+                                    ./image/team/tablet/img-3.jpg    1x,
+                                    ./image/team/tablet/img-3@2x.jpg 2x
+                                    "                                          
+                                />
+                                <img
+                                    srcset="
+                                    ./image/team/mobile/img-3.jpg    1x,
+                                    ./image/team/mobile/img-3@2x.jpg 2x
+                                    " 
+                                    src="./image/team/mobile/img-3.jpg"
+                                    alt="Чоловік в окулярах і з бородою посміхається"
+                                    loading="lazy"
+                                />
+                            </picture>                          
                             <h3 class="third-section__title">Ігор Дем'яненко</h3><p class="third-section__paragraf">Product Designer</p>
                             <ul class="social">
                                  <li class="social__item">
@@ -173,12 +191,32 @@
                                 </li>
                             </ul>
                         </li>
-                        <li class="third-section__border"><img
-                            srcset=
-                            "./image/img-4.jpg 1x,
-                            ./image/img-4@2x.jpg 2x" 
-                            src="./image/img-4.jpg" 
-                            alt="Симпатична пані в окулярах посміхається">
+                        <li class="third-section__border">
+                            <picture>
+                                <source
+                                    media="(min-width:1200px)"
+                                    srcset= "
+                                    ./image/team/desk/img-4.jpg 1x,
+                                    ./image/team/desk/img-4@2x.jpg 2x
+                                    "
+                                />
+                                <source
+                                    media="(min-width:768px)"
+                                    srcset="
+                                    ./image/team/tablet/img-4.jpg    1x,
+                                    ./image/team/tablet/img-4@2x.jpg 2x
+                                    "                                          
+                                />
+                                <img
+                                    srcset="
+                                    ./image/team/mobile/img-4.jpg    1x,
+                                    ./image/team/mobile/img-4@2x.jpg 2x
+                                    " 
+                                    src=“./image/team/mobile/img-4.jpg”
+                                    alt="Симпатична пані в окулярах посміхається"
+                                    loading="lazy"
+                                />
+                            </picture>
                             <h3 class="third-section__title">Ольга Рєпіна</h3><p class="third-section__paragraf">Frontend Developer</p>
                             <ul class="social">
                                 <li class="social__item">
@@ -211,12 +249,32 @@
                                </li>
                            </ul>
                         </li>
-                        <li class="third-section__border"><img
-                            srcset=
-                            "./image/img-5.jpg 1x,
-                            ./image/img-5@2x.jpg 2x"
-                            src="./image/img-5.jpg" 
-                            alt="Молодий, не голиний, чоловік посміхається">
+                        <li class="third-section__border">
+                            <picture>
+                                <source
+                                    media="(min-width:1200px)"
+                                    srcset= "
+                                    ./image/team/desk/img-5.jpg 1x,
+                                    ./image/team/desk/img-5@2x.jpg 2x
+                                    "
+                                />
+                                <source
+                                    media="(min-width:768px)"
+                                    srcset="
+                                    ./image/team/tablet/img-5.jpg    1x,
+                                    ./image/team/tablet/img-5@2x.jpg 2x
+                                    "                                          
+                                />
+                                <img
+                                    srcset="
+                                    ./image/team/mobile/img-5.jpg    1x,
+                                    ./image/team/mobile/img-5@2x.jpg 2x
+                                    " 
+                                    src="./image/team/mobile/img-5.jpg"
+                                    alt="Молодий, не голиний, чоловік посміхається"
+                                    loading="lazy"
+                                />
+                            </picture>
                             <h3 class="third-section__title">Микола Тарасов</h3><p class="third-section__paragraf">Marketing</p>
                             <ul class="social">
                                 <li class="social__item">
@@ -249,12 +307,32 @@
                                </li>
                            </ul>
                         </li>
-                        <li class="third-section__border"><img 
-                            srcset=
-                            "./image/img-6.jpg 1x,
-                            ./image/img-6@2x.jpg 2x"
-                            src="./image/img-6.jpg" 
-                            alt="Не голиний чоловік посміхається на камеру">
+                        <li class="third-section__border">
+                            <picture>
+                                <source
+                                    media="(min-width:1200px)"
+                                    srcset= "
+                                    ./image/team/desk/img-6.jpg 1x,
+                                    ./image/team/desk/img-6@2x.jpg 2x
+                                    "
+                                />
+                                <source
+                                    media="(min-width:768px)"
+                                    srcset="
+                                    ./image/team/tablet/img-6.jpg    1x,
+                                    ./image/team/tablet/img-6@2x.jpg 2x
+                                    "                                          
+                                />
+                                <img
+                                    srcset="
+                                    ./image/team/mobile/img-6.jpg    1x,
+                                    ./image/team/mobile/img-6@2x.jpg 2x
+                                    " 
+                                    src="./image/team/mobile/img-6.jpg"
+                                    alt="Не голиний чоловік посміхається на камеру"
+                                    loading="lazy"
+                                />
+                            </picture>
                             <h3 class="third-section__title">Михайло Єрмаков</h3><p class="third-section__paragraf">UI Designer</p>
                             <ul class="social">
                                 <li class="social__item">
@@ -344,15 +422,17 @@
     <footer class="footer">
         <address class="footer__background">
             <div class="footer__container-footer">
-                <ul>
-                    <li><a href="./index.html" lang="en" class="logo logo-footer">
-                        <span class="accent">Web</span>Studio</a></li>
-                    <li><a href="https://goo.gl/maps/HV8BAcvppS4aVWNn8" class="footer__address">м. Київ, пр-т Лесі Українки, 26</a></li>
-                    <li><a href="mailto:info@devstudio.com" class="footer__mail-footer">info@devstudio.com</a></li>
-                    <li><a href="tel:+380961111111" class="footer__link-number">+38 096 111 11 11</a></li>
-                </ul>
+                <div>
+                    <a href="./index.html" lang="en" class="logo logo-footer">
+                        <span class="accent">Web</span>Studio</a>
+                    <ul>
+                        <li><a href="https://goo.gl/maps/HV8BAcvppS4aVWNn8" class="footer__address">м. Київ, пр-т Лесі Українки, 26</a></li>
+                        <li><a href="mailto:info@devstudio.com" class="footer__mail-footer">info@devstudio.com</a></li>
+                        <li><a href="tel:+380961111111" class="footer__link-number">+38 096 111 11 11</a></li>
+                    </ul>
+                </div>               
                 <div class="footer__social">
-                    <span class="footer__title">приєднуйтесь</span>
+                    <p class="footer__title">приєднуйтесь</p>
                     <ul class="footer__icon">
                         <li class="footer__social-item">
                            <a class="footer__link" href="#">
@@ -386,23 +466,21 @@
                 </div>
                <form class="footer-form">
                     <p class="footer-form__titel">Підпишіться на розсилку</p>
-                    <ul class="footer-form__listed">
-                        <li class="footer-form__field">
+                    <div class="footer-form__listed">
+                        <div class="footer-form__field">
                             <input 
                             type="text"
                             class="footer-form__input"
                             name="name"
                             id="name"
                             placeholder="E-mail">
-                        </li>
-                        <li>
-                            <button class="footer-form__subscription">Підписатися
-                                <svg class="footer-form__icon" width="24" height="24">
-                                    <use href="./image/icons.svg#icon-icon-send"></use>
-                                </svg>
-                            </button>
-                        </li>
-                    </ul>
+                        </div>
+                        <button class="footer-form__subscription">Підписатися
+                            <svg class="footer-form__icon" width="24" height="24">
+                                <use href="./image/icons.svg#icon-icon-send"></use>
+                            </svg>
+                        </button>                       
+                    </div>
                 </form> 
             </div>
         </address>

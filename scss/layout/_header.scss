@@ -9,11 +9,8 @@
         padding-top: 10px;
         padding-bottom: 10px;
 
-        @media (min-width: 480px){
-            padding-top: 21px;
-            padding-bottom: 21px;
-        }
-        
+    
+
         @media (min-width: 768px){
             display: flex;
             justify-content: space-between;
@@ -143,7 +140,7 @@
     
     &__link-mail{
         display: flex;
-        justify-content: space-between;
+        align-items: center;
         font-family: 'Roboto';
         font-style: normal;
         font-weight: 500;
@@ -180,6 +177,8 @@
    
     
     &__link-number{
+        display: flex;
+        align-items: center;
         font-family: 'Roboto'; 
         font-style: normal;
         font-weight: 500;

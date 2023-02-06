@@ -1,6 +1,11 @@
 
 
 .hero-section{
+    padding-bottom: 60px;
+    @media (min-width: 1200px){
+        padding-bottom: 94px;
+
+    }
     
     
     &__background{
@@ -9,14 +14,35 @@
         width: 100%;
         background: #2F303A;
         background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url(../image/Img.jpg);
+        url(../image/team/mobile/Header-img.jpg);
         background-repeat: no-repeat;
         background-position: center center;
         background-size: cover;
+        margin-left: auto;
+        margin-right: auto;
 
         @media (min-resolution: 2dppx) {
-            background-image: url(../image/Img@2x.jpg) 
+            background-image: url(../image/team/mobile/Header-img@2x.jpg);
+            
         }
+
+       @media (min-width:768px) {
+        background-image: url(../image/team/tablet/Header-img.jpg);
+        @media (min-resolution: 2dppx) {
+            background-image: url(../image/team/tablet/Header-img@2x.jpg);
+            
+        }  
+       }
+
+       @media (min-width:1200px) {
+        background-image: url(../image/team/desk/Img.jpg);
+        max-width: 1600px;
+
+        @media (min-resolution: 2dppx) {
+            background-image: url(../image/team/desk/Img@2x.jpg);
+            
+        }
+       }
         
     }
     &__title{
