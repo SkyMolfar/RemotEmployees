@@ -2,12 +2,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    
 
     &__item{
         display: inline-block;
         width: 44px;
         height: 44px;
-        margin-bottom: 30px;
         gap: 10px;
     
     }

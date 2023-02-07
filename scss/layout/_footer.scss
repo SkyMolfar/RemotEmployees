@@ -15,7 +15,6 @@
     
     &__container-footer{
         max-width: 480px;
-        max-height: 604px;
         padding-top: 60px;
         padding-bottom: 60px;
         padding-left: 15px;
@@ -141,7 +140,6 @@
     
     &__social{
         text-align: center;
-        margin-top: 5px;
         margin-bottom: 60px;
 
         @media (min-width: 768px) {

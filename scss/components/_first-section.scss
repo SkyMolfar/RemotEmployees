@@ -11,12 +11,13 @@
 
     &__list{
         display: block;
-        margin-bottom: 30px;
+        
 
         @media (min-width: 768px){
+            
+            display: flex;
             align-items: center;
             flex-wrap: wrap;
-            display: flex;
             gap: 30px;
                         
         }
@@ -33,11 +34,12 @@
         }
 
         @media (min-width: 768px){
-        flex-basis: calc((100% - 60px) / 2);
+        flex-basis: calc((100% - 30px) / 2);
+        margin-bottom: 0;
         } 
 
         @media (min-width: 1200px){
-        flex-basis: calc((100% - 120px) / 4);
+        flex-basis: calc((100% - 90px) / 4);
         margin-bottom: 0;
         
     } 
@@ -54,6 +56,11 @@
         margin-bottom: 10px;
         text-transform: uppercase;
         color: var(--black-color);
+
+        @media (min-width:768px) {
+            display: inline-block;
+            
+        }
     }
     
     &__text{

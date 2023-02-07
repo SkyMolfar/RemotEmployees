@@ -186,18 +186,17 @@ img {
 }
 .first-section__list {
   display: block;
-  margin-bottom: 30px;
 }
 @media (min-width: 768px) {
   .first-section__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     gap: 30px;
   }
 }
@@ -214,14 +213,15 @@ img {
 }
 @media (min-width: 768px) {
   .first-section__icon-box {
-    -ms-flex-preferred-size: calc((100% - 60px) / 2);
-        flex-basis: calc((100% - 60px) / 2);
+    -ms-flex-preferred-size: calc((100% - 30px) / 2);
+        flex-basis: calc((100% - 30px) / 2);
+    margin-bottom: 0;
   }
 }
 @media (min-width: 1200px) {
   .first-section__icon-box {
-    -ms-flex-preferred-size: calc((100% - 120px) / 4);
-        flex-basis: calc((100% - 120px) / 4);
+    -ms-flex-preferred-size: calc((100% - 90px) / 4);
+        flex-basis: calc((100% - 90px) / 4);
     margin-bottom: 0;
   }
 }
@@ -236,6 +236,11 @@ img {
   margin-bottom: 10px;
   text-transform: uppercase;
   color: var(--black-color);
+}
+@media (min-width: 768px) {
+  .first-section__title {
+    display: inline-block;
+  }
 }
 .first-section__text {
   display: block;
@@ -263,19 +268,10 @@ img {
   fill: var(--fill-icon-black);
 }
 
-.hero-section {
-  padding-bottom: 60px;
-}
-@media (min-width: 1200px) {
-  .hero-section {
-    padding-bottom: 94px;
-  }
-}
 .hero-section__background {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 118px 60px;
   width: 100%;
   background: #2F303A;
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../image/team/mobile/Header-img.jpg);
@@ -283,6 +279,7 @@ img {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
+  padding: 118px 60px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -305,6 +302,8 @@ img {
   .hero-section__background {
     background-image: url(../image/team/desk/Img.jpg);
     max-width: 1600px;
+    padding-bottom: 200px;
+    padding-top: 200px;
   }
 }
 @media (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1200px) and (min-resolution: 2dppx) {
@@ -525,22 +524,26 @@ img {
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   background-color: var(--white-color);
+  padding-bottom: 30px;
+  margin-bottom: 30px;
 }
 @media (min-width: 768px) {
   .third-section__border {
-    max-width: 354px;
+    min-width: 354px;
+    margin-bottom: 0;
   }
 }
 @media (min-width: 768px) {
   .third-section__border {
-    -ms-flex-preferred-size: calc((100% - 60px) / 2);
-        flex-basis: calc((100% - 60px) / 2);
+    -ms-flex-preferred-size: calc((100% - 30px) / 2);
+        flex-basis: calc((100% - 30px) / 2);
   }
 }
 @media (min-width: 1200px) {
   .third-section__border {
-    -ms-flex-preferred-size: calc((100% - 120px) / 4);
-        flex-basis: calc((100% - 120px) / 4);
+    -ms-flex-preferred-size: calc((100% - 90px) / 4);
+        flex-basis: calc((100% - 90px) / 4);
+    min-width: 270px;
   }
 }
 .third-section__title {
@@ -713,8 +716,8 @@ img {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
-  font-size: 34px;
-  line-height: 40px;
+  font-size: 24px;
+  line-height: 1.16;
   letter-spacing: 0.02em;
   color: var(--gray-color);
   text-decoration: none;
@@ -741,7 +744,7 @@ img {
   color: var(--blu-color);
   cursor: pointer;
 }
-.mobile-menu__social-list::before {
+.mobile-menu__social-list:not(:last-child):before {
   content: "";
   position: absolute;
   width: 0px;
@@ -750,9 +753,6 @@ img {
   border-radius: 2px;
   top: 0px;
   right: -10px;
-}
-.mobile-menu .social-list:first-child {
-  display: none;
 }
 
 /*layout*/
@@ -788,7 +788,6 @@ img {
 }
 .footer__container-footer {
   max-width: 480px;
-  max-height: 604px;
   padding-top: 60px;
   padding-bottom: 60px;
   padding-left: 15px;
@@ -916,7 +915,6 @@ img {
 }
 .footer__social {
   text-align: center;
-  margin-top: 5px;
   margin-bottom: 60px;
 }
 @media (min-width: 768px) {
@@ -1651,7 +1649,7 @@ img {
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
-  line-height: 1.16px;
+  line-height: 1.16;
   letter-spacing: 0.03em;
   text-align: center;
   color: var(--white-color);
@@ -1690,7 +1688,6 @@ img {
   display: inline-block;
   width: 44px;
   height: 44px;
-  margin-bottom: 30px;
   gap: 10px;
 }
 .social__link {

@@ -86,8 +86,8 @@
        font-family: 'Roboto';
        font-style: normal;
        font-weight: 500;
-       font-size: 34px;
-       line-height: 40px;
+       font-size: 24px;
+       line-height: 1.16;
        letter-spacing: 0.02em;
        color: var(--gray-color);
        text-decoration: none;
@@ -103,7 +103,7 @@
   }
 
   &__social-list{
-    flex-wrap: wrap;
+   flex-wrap: wrap;
    position: relative;
    font-family: 'Roboto';
    font-style: normal;
@@ -117,7 +117,7 @@
 
 
 
-  &__social-list::before{
+  &__social-list:not(:last-child):before{
    content: "";
    position: absolute;
    width: 0px;
@@ -128,9 +128,7 @@
    right: -10px;
    
   } 
+ 
 
-  .social-list:first-child{
-  display: none;
-}
 }
 
