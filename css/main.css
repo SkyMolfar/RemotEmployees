@@ -192,9 +192,6 @@ img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     gap: 30px;
@@ -279,7 +276,7 @@ img {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  padding: 118px 60px;
+  padding: 118px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -302,8 +299,7 @@ img {
   .hero-section__background {
     background-image: url(../image/team/desk/Img.jpg);
     max-width: 1600px;
-    padding-bottom: 200px;
-    padding-top: 200px;
+    padding: 200px;
   }
 }
 @media (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1200px) and (min-resolution: 2dppx) {
@@ -460,7 +456,7 @@ img {
     display: -ms-flexbox;
     display: flex;
     padding-bottom: 94px;
-    padding-top: 94px;
+    padding-top: 0;
   }
   .second-section__image-list {
     display: -webkit-box;
@@ -911,6 +907,7 @@ img {
 @media (min-width: 1200px) {
   .footer__link-number {
     display: inline-block;
+    margin-bottom: 0;
   }
 }
 .footer__social {
