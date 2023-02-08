@@ -1,22 +1,18 @@
 /*Footer*/
 .footer{
     
-
-
-    &__background{
-
-        background-color: #2F303A;
-        width: 100%;
+    background-color: #2F303A;
+    width: 100%;  
+    padding-top: 60px;
+    padding-bottom: 60px;
 
         @media (min-width: 768px) {
             display: flex;
         }
-    }
+    
     
     &__container-footer{
         max-width: 480px;
-        padding-top: 60px;
-        padding-bottom: 60px;
         padding-left: 15px;
         padding-right: 15px;
         margin-left: auto;
@@ -27,16 +23,19 @@
             max-width: 768px;
             display: flex;
             flex-wrap: wrap;
-            padding-left: 76px;
-            padding-right: 89px;
+            justify-content: center;
+         
         
         }
         @media (min-width: 1200px) {
             min-width: 1200px;
             flex-wrap: nowrap;
-            padding-left: 15px;
-            padding-right: 15px;
+           
         }
+    }
+
+    &__address{
+        margin-bottom: 60px;
     }
     &__box-nav{
         text-align: center;
@@ -75,6 +74,7 @@
 
         @media (min-width: 1200px){
             display: inline-block;
+            margin-bottom: 0;
             
         }
     
@@ -117,7 +117,6 @@
         font-weight: 500;
         font-size: 14px;
         line-height: 1.14;
-        margin-bottom: 60px;
         color: var(--gray-color);
         fill: var(--gray-color);
         text-decoration: none;
@@ -151,6 +150,7 @@
 
          @media (min-width: 1200px){
             margin-left: 94px;
+            margin-bottom: 0;
          }
          
 

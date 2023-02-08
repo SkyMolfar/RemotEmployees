@@ -7,6 +7,7 @@
  
 
     @media (min-width:768px) {
+        margin-top: 60px;
         margin-right: auto;
         margin-left: auto;
         
@@ -15,6 +16,7 @@
     @media (min-width:1200px) {
         display: block;
         margin-left: 94px;
+        margin-top: 0;
     }
 
     &__titel{
@@ -45,6 +47,7 @@
 
         @media (min-width:1200px) {
             display: flex;
+            margin-bottom: 0;
         }
     }
     

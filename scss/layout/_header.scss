@@ -22,8 +22,8 @@
 
         @media (min-width:1200px) {   
     
-            padding-top: 32px;
-            padding-bottom: 32px;
+            padding-top: 24px;
+            padding-bottom: 25px;
             
         }
             
@@ -68,10 +68,6 @@
         top: 44px;
         left: 50%;
         transform: translate(-50%, 0);
-
-        @media (min-width:1200px) {  
-            top: 51px;          
-        }
       
     }
     
@@ -157,6 +153,7 @@
         @media (min-width:1200px) {
             font-size: 14px;
             line-height: 1.14;
+            margin-bottom: 0;
         }
         
         &:hover,
